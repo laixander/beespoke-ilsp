@@ -45,8 +45,8 @@ export const statProposalCards: StatCardProps[] = [
     {
         label: 'Under Review',
         count: 89,
-        color: 'purple',
-        icon: 'i-lucide-file-search'
+        color: 'secondary',
+        icon: 'i-lucide-scan-text'
     },
     {
         label: 'Approved',

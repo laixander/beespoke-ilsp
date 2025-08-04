@@ -1,6 +1,7 @@
 export interface PageProps {
     title?: string
     description?: string
+    alignCenter?: boolean
 }
 
 export interface BlockProps {

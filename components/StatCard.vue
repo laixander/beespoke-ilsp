@@ -1,12 +1,13 @@
 <template>
-    <UCard :class="[
+    <!-- <UCard :class="[
         useGradient && 'bg-gradient-to-tr from-5% to-default',
         useGradient && color === 'warning' && 'from-warning/10',
         useGradient && color === 'secondary' && 'from-secondary/10',
         useGradient && color === 'success' && 'from-success/10',
         useGradient && color === 'error' && 'from-error/10',
         useGradient && color === 'purple' && 'from-purple/10'
-    ]">
+    ]"> -->
+    <UCard>
         <!-- Adjust vertical alignment based on hasDetails -->
         <div :class="['flex justify-between', hasDetails ? 'items-start' : 'items-center']">
             <div>
@@ -33,17 +34,29 @@
             </div>
 
             <!-- Only show background if hasDetails -->
-            <div :class="[
+            <!-- <div :class="[
                 hasDetails ? 'rounded-full p-3' : '',
                 hasDetails && color === 'warning' && 'bg-warning/10',
                 hasDetails && color === 'secondary' && 'bg-secondary/10',
                 hasDetails && color === 'success' && 'bg-success/10',
                 hasDetails && color === 'error' && 'bg-error/10',
                 hasDetails && color === 'purple' && 'bg-purple/10'
+            ]"> -->
+            <div :class="[
+                'rounded-full p-3',
+                color === 'warning' && 'bg-warning/10',
+                color === 'secondary' && 'bg-secondary/10',
+                color === 'success' && 'bg-success/10',
+                color === 'error' && 'bg-error/10',
+                color === 'purple' && 'bg-purple/10'
             ]">
-                <UIcon :name="icon" :class="[
+                <!-- <UIcon :name="icon" :class="[
                     'shrink-0 flex',
                     hasDetails ? 'size-5' : 'size-6',
+                    `text-${color}`
+                ]" /> -->
+                <UIcon :name="icon" :class="[
+                    'shrink-0 flex size-5',
                     `text-${color}`
                 ]" />
             </div>

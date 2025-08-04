@@ -14,6 +14,10 @@ import { partnerItems } from './lists';
 // Options
 import { classifications } from './options';
 import { regions } from './options';
+import { institutions } from './options';
+import { durations } from './options';
+
+// Actions
 import { quickActions } from './actions';
 
 export {
@@ -27,5 +31,7 @@ export {
     classifications,
     regions,
     partnerItems,
-    quickActions
+    quickActions,
+    institutions,
+    durations
 };

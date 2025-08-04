@@ -1,4 +1,19 @@
 <template>
+    <Page>
+        <Block>
+            <ComingSoon />
+        </Block>
+    </Page>
+</template>
+
+<script setup lang="ts">
+import Page from '~/components/wrapper/Page.vue'
+import Block from '~/components/wrapper/Block.vue'
+import ComingSoon from '~/components/ComingSoon.vue';
+</script>
+
+
+<!-- <template>
     <Page title="Partner Management" description="Manage institutional partnerships and collaborations">
         <template #actions>
             <UButton label="Add New Partner" icon="i-lucide-plus" size="lg" block class="justify-center" />
@@ -39,4 +54,4 @@ import ListGroup from '~/components/wrapper/ListGroup.vue'
 import PartnerCard from '~/components/partners/PartnerCard.vue'
 const _classifications = ref('all')
 const _regions = ref('all')
-</script>
+</script> -->

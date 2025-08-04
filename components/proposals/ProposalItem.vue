@@ -1,6 +1,6 @@
 <template>
     <Block>
-        <div class="w-full h-2 bg-primary absolute top-0 left-0" />
+        <div class="w-full h-2 bg-success absolute top-0 left-0" />
         <div class="flex items-start gap-4 pt-2">
             <div class="space-y-4 flex-1">
                 <div class="flex items-start">
