@@ -80,3 +80,10 @@ export interface SearchBarProps {
     modelValue?: string
     modelSelects?: Record<string, any>
 }
+
+export interface StepperLayoutProps {
+  step: number
+  steps: string[]
+  value: number
+  stepComponents: any[] // You can replace `any` with a more specific type if needed
+}
